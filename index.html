@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>School</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: rgb(176, 210, 232); font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		} 
+        .input-container {
+            margin-bottom: 10px;
+        }
+        .Staff{
+			background: rgb(103, 181, 209); font-family: calibri; padding-right: 15px;padding-left: 15px;
+        }
+
+        .Personal{
+			background: rgb(108, 201, 224); font-family: calibri; padding-right: 15px;padding-left: 15px;
+        }
+
+            .Other{
+			background: rgb(138, 199, 234); font-family: calibri; padding-right: 15px;padding-left: 15px;
+        }
+	</style>
+</head>
+<body>
+    <nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">SMART SCHOOL</a> </div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<button><a href="#">SignIn</a></button>
+				<button><a href="#">SignUp</a></button>
+			</ul>
+		</div>
+	</nav>
+	
+		
+       <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHAEEN JUNIOR COLLEGE</h1>
+        <div class="Staff">
+            <h1>Staff details</h1>
+        </div>
+        <div class="container">
+    <form id="new_staff_form">
+        <label for="employment_status">Employment Status:</label>
+        <select id="employment_status" name="employment_status">
+            <option value="Temporary">Temporary</option>
+            <option value="Temporary">Permanent</option>
+            <option value="Temporary">Part time</option>
+            <!-- Add other employment status options if needed -->
+        </select>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation">
+
+        <label for="department">Department:</label>
+        <select id="department" name="department"> <!-- Populate this with departments using JavaScript -->
+        <option value="Yes">CS</option>
+        <option value="No">EC</option>
+        <option value="Yes">CIvil</option>
+        <option value="No">Mec</option>
+    </select></br>
+
+       <label for="trained_as">Trained As:</label>
+        <input type="text" id="trained_as" name="trained_as">
+
+        <label for="staff_type">Staff Type:</label>
+        <select id="staff_type" name="staff_type">
+            <option value="Teaching">Teaching</option>
+            <option value="Non Teaching">Non Teaching</option>
+            <option value="Transport">Transport</option>
+        </select>
+
+        <label for="qualification_type">Qualification Type:</label>
+        <select id="qualification_type" name="qualification_type">
+            <option value="Yes">BE</option>
+        <option value="No">BSC</option>
+        <option value="Yes">MCA</option>
+        <option value="No">MBA</option>
+        </select> </br><!-- Populate this with qualification types using JavaScript -->
+
+        <label for="ctet_qualified">CTET Qualified:</label>
+        <select id="ctet_qualified" name="ctet_qualified">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="education_qualification">Education Qualification:</label>
+        <select id="education_qualification" name="education_qualification"></select> <!-- Populate this with education qualifications using JavaScript -->
+
+        <label for="employement_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EmploymentCategory:</label>
+        <select id="employement_category" name="employement_category"></select></br><!-- Populate this with employment categories using JavaScript -->
+
+        <label for="access_level">Access Level:</label>
+        <select id="access_level" name="access_level"></select> <!-- Populate this with access levels using JavaScript -->
+
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch">
+            <option value="SHAHEEN JUNIOR COLLEGE">SHAHEEN JUNIOR COLLEGE</option>
+            <!-- Add other branches if needed -->
+        </select></br>
+
+        <input type="submit" value="Submit">
+    </br>
+    </form>
+</div>
+   
+
+
+<div class="Personal">
+<h1>Personal details</h>
+    </div>
+    <form id="personal_details_form">
+        <div class="input-container">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+
+        <div class="input-container">
+            <label for="emergency_contact_no">Emergency Contact No:</label>
+            <input type="tel" id="emergency_contact_no" name="emergency_contact_no" required pattern="[0-9]{10}">
+        </div>
+
+        <div class="input-container">
+            <label for="permanent_address">Permanent Address:</label>
+            <textarea id="permanent_address" name="permanent_address" required></textarea>
+        </div>
+
+        <div class="input-container">
+            <label for="middle_name">Middle Name:</label>
+            <input type="text" id="middle_name" name="middle_name" required>
+        </div>
+
+        <div class="input-container">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label for="corresponding_address">Corresponding Address:</label>
+            <textarea id="corresponding_address" name="corresponding_address" required></textarea><br>
+        </div>
+
+        <div class="input-container">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+        </div>
+
+        <div class="input-container">
+            <label for="dob">Enter Date of Birth (dd-mm-yyyy):</label>
+            <input type="text" id="dob" name="dob" required pattern="(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}"><br>
+        </div>
+
+        <div class="input-container">
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" name="religion" value="Hindu" required><br>
+        </div>
+
+        <div class="input-container">
+            <label for="mobile_no">Mobile No:</label>
+            <input type="tel" id="mobile_no" name="mobile_no" required pattern="[0-9]{10}"><br>
+        </div>
+
+        <div class="input-container">
+            <label for="email_id">Email Id:</label>
+            <input type="email" id="email_id" name="email_id" required><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+<div class="Other">
+    <h1>Other details</h1>
+</div>
+
+
+
+    <form id="other_details_form">
+        <div class="input-container">
+            <label for="aadhar_no">Aadhar No:</label>
+            <input type="text" id="aadhar_no" name="aadhar_no" required pattern="[0-9]{12}">
+        </div>
+
+        <div class="input-container">
+            <label for="salary_pay_type">Salary Pay Type:</label>
+            <select id="salary_pay_type" name="salary_pay_type" required>
+                <option value="Consolidate">Consolidate</option>
+                <option value="PAY">PAY</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label for="pan_no">PAN NO:</label>
+            <input type="text" id="pan_no" name="pan_no" required pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+        </div>
+
+        <div class="input-container">
+            <label for="government_id">Government Id/Resident No:</label>
+            <input type="text" id="government_id" name="government_id" required>
+        </div>
+
+        <div class="input-container">
+            <label for="date_of_joining">Date of Joining (dd-mm-yyyy):</label>
+            <input type="text" id="date_of_joining" name="date_of_joining" required pattern="(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}"><br>
+        </div>
+
+        <div class="input-container">
+            <label for="citizenship">Citizenship:</label>
+            <input type="text" id="citizenship" name="citizenship" value="Indian" required>
+        </div>
+
+        <div class="input-container">
+            <label for="staff_reference_code">Staff Reference Code:</label>
+            <input type="text" id="staff_reference_code" name="staff_reference_code" required>
+        </div>
+
+        <input type="submit" value="Save & Continue">
+    </form>
+
+<h1>about</h1>
+
+
+<html> <head> <title>Welcome to Our Hospital</title> </head> <body> <h1>Welcome to Our Hospital!</h1> <h2>Professional Doctors</h2> <p>Best Doctors at your service. Our Surgeons are among the top doctors in India.</p> <h2>Why Choose Us?</h2> <p>We provide Family Medicine and care for you and your family. Let's make a healthy community.</p> <h2>Departments</h2> <p>Director: John Doe</p> <p>D 24*7: 24*7 Service. We Provide 24*7 Service so you can get help at your convenient time.</p> </body> </html>
+Is this conversation helpful so far?
+
+
